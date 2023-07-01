@@ -7,6 +7,8 @@ import RefComponent from './components/RefComponent';
 import ControllerComponent from './components/ControllerComponent';
 import CounterComponent from './components/CounterComponent';
 import TodoList from './components/TodoList';
+import ReducerComponent from './components/ReducerComponent';
+import ProductsComponent from './components/ProductsComponent';
 
 function App() {
   return (
@@ -33,6 +35,12 @@ function App() {
           <Link to="/todo-list" className='font-bold '>
             Lista Todo
           </Link>
+          <Link to="/use-reduce-component" className='font-bold '>
+            Use Reducer
+          </Link>
+          <Link to="/products-component" className='font-bold '>
+            Products With Axios
+          </Link>
         </div>
         <Routes>
           <Route path='/hola-mundo' exact element={<HelloWorld />} ></Route>
@@ -41,6 +49,8 @@ function App() {
           <Route path='/controller-component' exact element={<ControllerComponent />} ></Route>
           <Route path='/counter-component' exact element={<CounterComponent />} ></Route>
           <Route path='/todo-list' exact element={<TodoList />} ></Route>
+          <Route path='/use-reduce-component' exact element={<ReducerComponent />} ></Route>
+          <Route path='/products-component' exact element={<ProductsComponent />} ></Route>
         </Routes>
       </main>
     </BrowserRouter>
